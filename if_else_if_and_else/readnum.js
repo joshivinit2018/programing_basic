@@ -1,6 +1,13 @@
-let number=( Math.floor(Math.random() * 9999) + 1000);
-
-if ( number / 10 == 0.1 )
+const readline = require('readline');
+const reads = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+console.log("----------------------------------------------------------------------");
+reads.question(' Enter a Choice between thes numbers [1,10,100,1000]:- ', (number) => 
+{
+    console.log("-------------------------------------------------------------------");
+    if ( number / 10 == 0.1 )
     {
         console.log(number+ " The Number is Unit Digit");
     }
@@ -16,4 +23,5 @@ if ( number / 10 == 0.1 )
     {
         console.log(number+ " The Number is Thousands Digit")
     }
-    else{}
+    reads.close();
+}); 

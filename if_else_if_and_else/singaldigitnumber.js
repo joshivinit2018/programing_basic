@@ -38,7 +38,7 @@ else if (randomCheck == 9)
 }
 else if (randomCheck == 0)
 {
-    console.log("\n"+randomCheck+"ZERO");
+    console.log("\n"+randomCheck+" ZERO");
 }
 else{
     console.log("*******");
